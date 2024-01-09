@@ -7,7 +7,10 @@ module.exports = function (api) {
       [
         require.resolve('babel-plugin-module-resolver'),
         {
-          root: ['../..'],
+          /**
+           * https://github.com/tleunen/babel-plugin-module-resolver/blob/master/DOCS.md#root
+           */
+          // root: ['../..'], 
           alias: {
             // define aliases to shorten the import paths
             app: '../../packages/app',
