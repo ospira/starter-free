@@ -1,0 +1,13 @@
+{
+    "includeNpm": true,
+    "fileExtensions": ["js", "ts", "tsx"],
+    "tsConfig": "tsConfig.json",
+    "detectiveOptions": {
+        "es6": {
+			"mixedImports": true
+		},
+        "ts": {
+			"mixedImports": true
+		}
+    }
+}

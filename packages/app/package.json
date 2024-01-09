@@ -7,7 +7,7 @@
     "*.css"
   ],
   "dependencies": {
-    "@my/ui": "0.0.1",
+    "../../packages/ui": "0.0.1",
     "@tamagui/animations-react-native": "^1.84.0",
     "@tamagui/colors": "^1.84.0",
     "@tamagui/font-inter": "^1.84.0",
