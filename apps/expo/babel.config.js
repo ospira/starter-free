@@ -21,18 +21,18 @@ module.exports = function (api) {
       ],
       // if you want reanimated support
       // 'react-native-reanimated/plugin',
-      ...(process.env.EAS_BUILD_PLATFORM === 'android'
-        ? []
-        : [
-            [
-              '@tamagui/babel-plugin',
-              {
-                components: ['@my/ui', 'tamagui'],
-                config: '../../packages/config/src/tamagui.config.ts',
-              },
-            ],
-          ]),
-      'transform-inline-environment-variables',
+      // ...(process.env.EAS_BUILD_PLATFORM === 'android'
+      //   ? []
+      //   : [
+      //       [
+      //         '@tamagui/babel-plugin',
+      //         {
+      //           components: ['@my/ui', 'tamagui'],
+      //           config: '../../packages/config/src/tamagui.config.ts',
+      //         },
+      //       ],
+      //     ]),
+      // 'transform-inline-environment-variables',
     ],
   };
 };
