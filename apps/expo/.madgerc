@@ -1,12 +1,15 @@
 {
+    "baseDir": ".",
     "includeNpm": true,
     "fileExtensions": ["js", "ts", "tsx"],
+    "webpackConfig": "webpack.config.js",
     "tsConfig": "tsConfig.json",
     "detectiveOptions": {
         "es6": {
 			"mixedImports": true
 		},
         "ts": {
+            
 			"mixedImports": true
 		}
     }
