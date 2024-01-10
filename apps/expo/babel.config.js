@@ -7,12 +7,15 @@ module.exports = function (api) {
       [
         require.resolve('babel-plugin-module-resolver'),
         {
-          // root: ['../..'],
-          // alias: {
-          //   // define aliases to shorten the import paths
-          //   app: '../../packages/app',
-          //   '@my/ui': '../../packages/ui',
-          // },
+          /**
+           * https://github.com/tleunen/babel-plugin-module-resolver/blob/master/DOCS.md#root
+           */
+          // root: ['../..'], 
+          alias: {
+            // define aliases to shorten the import paths
+            app: '../../packages/app',
+            '@my/ui': '../../packages/ui',
+          },
           extensions: ['.js', '.jsx', '.tsx', '.ios.js', '.android.js'],
         },
       ],
@@ -29,7 +32,7 @@ module.exports = function (api) {
       //         },
       //       ],
       //     ]),
-      'transform-inline-environment-variables',
+      // 'transform-inline-environment-variables',
     ],
   };
 };
