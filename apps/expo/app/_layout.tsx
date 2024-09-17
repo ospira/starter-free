@@ -1,5 +1,5 @@
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native'
-import { Provider } from 'app/provider'
+import { Provider } from '../../../packages/app/provider/index'
 import { useFonts } from 'expo-font'
 import { Stack } from 'expo-router'
 import { useColorScheme } from 'react-native'
@@ -10,10 +10,16 @@ export default function HomeLayout() {
     InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
   })
   const scheme = useColorScheme()
-
-  if (!loaded) {
-    return null
-  }
+  /**
+   * there may be a seperate font issue but want
+   * to isolate for now
+   * so keeping
+   * !loaded check
+   * commented out
+   */
+  // if (!loaded) {
+  //   return null
+  // }
   return (
     <Provider>
       <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
